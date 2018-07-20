@@ -5,6 +5,7 @@ def oxford_comma(array)
     array.length == 2
     result = array.join(" and ")
   else
-    results = "#{array.join(" , ")} and #{array.last}"
+
+    results = "#{array[0..-2].join(" , ")} and #{array.last}"
   end
 end
